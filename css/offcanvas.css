@@ -1,0 +1,112 @@
+
+/* Starting */
+.left {
+  float:left
+}
+.right {
+  float:right
+}
+header ul.menu>li {
+  position: relative;
+  line-height: 40px;
+  padding: 0 1em
+}
+header ul.menu>li:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all .3ms;
+  bottom: 0;
+  left:0;
+  content: '';
+  display: none
+}
+header ul.menu>li:hover:before {
+  display: block
+}
+header ul.menu>li.text:after {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  right: 0;
+  top: 29px
+}
+/* Slide Menu */
+.slide-menu {
+	  -webkit-transform: translateX(-285px);
+	  -ms-transform: translateX(-285px);
+	  transform: translateX(-285px);
+	  -webkit-transform-style: preserve-3d;
+	  -webkit-transition-duration: .2s;
+	  transition-duration: .2s;
+	  -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+	  transition-timing-function: cubic-bezier(.4,0,.2,1);
+	  -webkit-transition-property: -webkit-transform;
+	  transition-property: transform;
+	  background: #fff;
+	  bottom: 0;
+	  color: #333;
+	  z-index: 9999;
+	  width: 250px;
+	  -webkit-box-shadow: 3px 0px 7px 0px rgb(0 0 0 / 25%);
+	  -moz-box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.25);
+    position: fixed;
+    top: 0;
+}
+.slide-header {
+  height: 150px;
+  color: #fff;
+  top:0 !important;
+  background: url(https://3.bp.blogspot.com/-dXxdKFkVrdw/VKLa3bMmv2I/AAAAAAAAVjI/Lp0vf22tynE/s1600/sandiegodusk.png)no-repeat center center/cover;
+  position: relative;
+  text-align: center
+}
+
+.slide-close-button button {
+  background: #aaa;
+  border: 0;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: -15px;
+  outline: none;
+  right: 2em;
+  z-index: 99999;
+}
+.slide-menu>.slide-menu-here>.menu li>a{
+  padding: .8em 1em;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  display: inline-block
+}
+.slide-menu>.slide-menu-here>.menu li.title>.dropdownmenu:after {
+  content: "\f107";
+  top: 10px;
+  position: Absolute;
+  right: 2em;
+  background-color: #aaa;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  line-height: 20px;
+  color: #fff;
+  font: normal normal normal 14px/20px FontAwesome;
+}
+/* Slide Left  */
+.slide-left {
+      -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    z-index: 99999;
+}
